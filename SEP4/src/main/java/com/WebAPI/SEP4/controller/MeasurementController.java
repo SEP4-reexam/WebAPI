@@ -3,15 +3,13 @@ package com.WebAPI.SEP4.controller;
 import com.WebAPI.SEP4.entities.Measurement;
 import com.WebAPI.SEP4.service.MeasurementService;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
-@RequestMapping("/measurement")
+@RequestMapping("/Sauna/measurement")
 public class MeasurementController {
 
     private final MeasurementService measurementService;
-
 
     public MeasurementController(MeasurementService measurementService) {
         this.measurementService = measurementService;
